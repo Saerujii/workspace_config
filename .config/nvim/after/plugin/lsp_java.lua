@@ -12,7 +12,7 @@ local jdtcfg = {
         if client.config.settings then
             client.notify('workspace/didChangeConfiguration', { settings = client.config.settings })
         end
-    end
+    end,
 }
 
 -- Somehow this is working, but because of mason (Probably) it says double setup or smth 
