@@ -15,8 +15,9 @@ return require('packer').startup(function(use)
 
 	use { "rose-pine/neovim", as = "rose-pine" }
 	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
+    use {"nvim-treesitter/nvim-treesitter-context"}
 	use('nvim-treesitter/playground')
-	use({'ThePrimeagen/harpoon', branch = "harpoon2" }) 
+	use({'ThePrimeagen/harpoon', branch = "harpoon2" })
 	use('tpope/vim-fugitive')
 
 	use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
@@ -57,5 +58,7 @@ return require('packer').startup(function(use)
     use {
         "ray-x/lsp_signature.nvim"
     }
+
+    use { "mbbill/undotree" }
 end)
 

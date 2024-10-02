@@ -143,6 +143,11 @@ _G.packer_plugins = {
     path = "/home/saeru/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/saeru/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/saeru/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -177,6 +182,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/saeru/.local/share/nvim/site/pack/packer/start/tree-sitter-blade",
     url = "https://github.com/EmranMR/tree-sitter-blade"
+  },
+  undotree = {
+    loaded = true,
+    path = "/home/saeru/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
   },
   ["vim-be-good"] = {
     loaded = true,
