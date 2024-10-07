@@ -56,10 +56,10 @@ configs.blade = {
     },
 }
 
-lspconfig.blade.setup {
+--[[ lspconfig.blade.setup {
     -- Capabilities is specific to my setup.
     capabilities = capabilities
-}
+} ]]
 
 lspconfig.emmet_language_server.setup({
     filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "php", "blade" },

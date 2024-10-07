@@ -29,6 +29,14 @@
 !.tmux/*/*/*/*/*
 !.tmux/*/*/*/*/*/*
 
+# Bashscripts
+!bashscripts/
+!bashscripts/*
+!bashscripts/*/*
+!bashscripts/*/*/*
+!bashscripts/*/*/*/*
+!bashscripts/*/*/*/*/*
+
 !.wezterm.lua
 !README.md
 !.gitignore
