@@ -37,6 +37,7 @@
 !bashscripts/*/*/*/*
 !bashscripts/*/*/*/*/*
 
+!.bashrc
 !.wezterm.lua
 !README.md
 !.gitignore
