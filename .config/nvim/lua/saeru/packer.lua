@@ -4,31 +4,31 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-	-- Packer can manage itself
-	use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
-	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.8',
-		-- or                            , branch = '0.1.x',
-		requires = { {'nvim-lua/plenary.nvim'} }
-	}
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
+        -- or                            , branch = '0.1.x',
+        requires = { { 'nvim-lua/plenary.nvim' } }
+    }
 
-	use { "rose-pine/neovim", as = "rose-pine" }
-	use("nvim-treesitter/nvim-treesitter", {run = ":TSUpdate"})
-    use {"nvim-treesitter/nvim-treesitter-context"}
-	use('nvim-treesitter/playground')
-	use({'ThePrimeagen/harpoon', branch = "harpoon2" })
-	use('tpope/vim-fugitive')
+    use { "rose-pine/neovim", as = "rose-pine" }
+    use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
+    use { "nvim-treesitter/nvim-treesitter-context" }
+    use('nvim-treesitter/playground')
+    use({ 'ThePrimeagen/harpoon', branch = "harpoon2" })
+    use('tpope/vim-fugitive')
 
-	use({'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'})
-	use({'neovim/nvim-lspconfig'})
-	use({'hrsh7th/nvim-cmp'})
-	use({'hrsh7th/cmp-nvim-lsp'})
+    use({ 'VonHeikemen/lsp-zero.nvim', branch = 'v4.x' })
+    use({ 'neovim/nvim-lspconfig' })
+    use({ 'hrsh7th/nvim-cmp' })
+    use({ 'hrsh7th/cmp-nvim-lsp' })
 
-	use({"williamboman/mason.nvim"})
-	use({"williamboman/mason-lspconfig.nvim"})
+    use({ "williamboman/mason.nvim" })
+    use({ "williamboman/mason-lspconfig.nvim" })
 
-    use({"ThePrimeagen/vim-be-good"})
+    use({ "ThePrimeagen/vim-be-good" })
 
     use "fladson/vim-kitty"
 
@@ -46,7 +46,7 @@ return require('packer').startup(function(use)
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
-        config = function ()
+        config = function()
             require("nvim-autopairs").setup {}
         end
     }
@@ -60,5 +60,8 @@ return require('packer').startup(function(use)
     }
 
     use { "mbbill/undotree" }
-end)
 
+    use { 'brenoprata10/nvim-highlight-colors' }
+
+    use { 'uga-rosa/ccc.nvim' }
+end)
