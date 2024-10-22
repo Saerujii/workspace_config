@@ -1,3 +1,20 @@
+local function showValues(list)
+    local output = ""
+    for k, v in pairs(list) do
+        local value = ""
+
+        if type(v) == "table" then
+            value = "table"
+        elseif type(v) == "function" then
+            value = "function"
+        else
+            value = tostring(v)
+        end
+        output = output .. k .. ": " .. value .. "; " .. string.char(10)
+    end
+    return output
+end
+
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
@@ -38,6 +55,9 @@ local configs = require("lspconfig.configs")
 -- capabilities.textDocument.completion.completionItem.snippetSupport = true
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+local out = showValues(configs.jdtls)
+-- print(out)
+
 lspconfig.pyright.setup {}
 
 lspconfig.cssls.setup {
@@ -62,12 +82,12 @@ configs.blade = {
 } ]]
 
 lspconfig.emmet_language_server.setup({
-    filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "php", "blade" },
+    filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "php", "blade", "templ" },
     -- Read more about this options in the [vscode docs](https://code.visualstudio.com/docs/editor/emmet#_emmet-configuration).
     -- **Note:** only the options listed in the table are supported.
     init_options = {
         ---@type table<string, string>
-        includeLanguages = { "php" },
+        includeLanguages = { "php", "templ" },
         --- @type string[]
         excludeLanguages = {},
         --- @type string[]
