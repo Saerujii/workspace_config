@@ -61,7 +61,5 @@ return require('packer').startup(function(use)
 
     use { "mbbill/undotree" }
 
-    use { 'brenoprata10/nvim-highlight-colors' }
-
     use { 'uga-rosa/ccc.nvim' }
 end)
