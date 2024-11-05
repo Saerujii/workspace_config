@@ -62,4 +62,8 @@ return require('packer').startup(function(use)
     use { "mbbill/undotree" }
 
     use { 'uga-rosa/ccc.nvim' }
+
+    use {
+        "ThePrimeagen/refactoring.nvim",
+    }
 end)

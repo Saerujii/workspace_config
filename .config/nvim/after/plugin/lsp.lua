@@ -55,8 +55,16 @@ local configs = require("lspconfig.configs")
 -- capabilities.textDocument.completion.completionItem.snippetSupport = true
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local out = showValues(configs.jdtls)
+local out = showValues(require('mason-lspconfig'))
 -- print(out)
+
+lspconfig.clangd.setup {
+    cmd = {
+        "clangd",
+        -- "--fallback-style=webkit"
+        -- "-style=file:/home/saeru/.clang-format"
+    }
+}
 
 lspconfig.pyright.setup {}
 

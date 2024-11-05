@@ -6,6 +6,7 @@ alias catalina=$CATALINA_HOME"/bin/catalina.sh"
 alias venv="source ~/bashscripts/venv.sh"
 alias fontls='fc-list | awk -F: "{print \$2}" | sort | uniq'
 alias vim-dev="~/.config/tmux/tmux-dev.sh"
+alias serve-static="source ~/bashscripts/serve-static.sh"
 
 # ~/.bashrc
 #
@@ -20,7 +21,7 @@ PS1='[\u@\h \W]\$ '
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
 export PATH=$PATH:/usr/lib/jvm/java-17-openjdk
 export PATH="$PATH:$HOME/.config/composer/vendor/bin/"
-export "$HOME/.cargo/env"
+. "$HOME/.cargo/env"
 export PATH=$PATH:/home/saeru/go/bin
 export NVM_DIR="$HOME/.nvm"
 
