@@ -24,6 +24,7 @@ export PATH="$PATH:$HOME/.config/composer/vendor/bin/"
 . "$HOME/.cargo/env"
 export PATH=$PATH:/home/saeru/go/bin
 export NVM_DIR="$HOME/.nvm"
+export PATH="$PATH:/home/saeru/.local/share/gem/ruby/3.3.0/bin"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

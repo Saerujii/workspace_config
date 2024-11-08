@@ -72,6 +72,8 @@ lspconfig.cssls.setup {
     capabilities = capabilities
 }
 
+lspconfig.gopls.setup{}
+
 configs.blade = {
     default_config = {
         -- Path to the executable: laravel-dev-generators
