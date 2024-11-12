@@ -1,0 +1,21 @@
+set nu
+
+set relativenumber number
+
+let mapleader = " "
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+set smartindent
+set nowrap
+set scrolloff=8
+
+nnoremap <C-c> <Esc>
+inoremap <C-c> <Esc>
+vnoremap <C-c> <Esc>
+
+map gcc :action CommentByLineComment<CR>
+map gbb :action CommentByBlockComment<CR>
