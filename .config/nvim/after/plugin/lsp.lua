@@ -55,7 +55,7 @@ local configs = require("lspconfig.configs")
 -- capabilities.textDocument.completion.completionItem.snippetSupport = true
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-local out = showValues(require('mason-lspconfig'))
+-- local out = showValues(require('mason-lspconfig'))
 -- print(out)
 
 lspconfig.clangd.setup {
@@ -65,8 +65,6 @@ lspconfig.clangd.setup {
         -- "-style=file:/home/saeru/.clang-format"
     }
 }
-
-lspconfig.pyright.setup {}
 
 lspconfig.cssls.setup {
     capabilities = capabilities

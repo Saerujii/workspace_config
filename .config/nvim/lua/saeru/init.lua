@@ -19,3 +19,5 @@ vim.filetype.add({
         [".*%.blade%.php"] = "blade",
     },
 })
+
+vim.g.omni_sql_no_default_maps = 1
