@@ -1,6 +1,7 @@
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
+config.audible_bell = "Disabled"
 
 config.color_scheme = 'Argonaut'
 
