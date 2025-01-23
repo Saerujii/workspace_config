@@ -70,7 +70,7 @@ lspconfig.cssls.setup {
     capabilities = capabilities
 }
 
-lspconfig.gopls.setup{}
+lspconfig.gopls.setup {}
 
 configs.blade = {
     default_config = {
@@ -135,4 +135,7 @@ cmp.setup({
         ['<C-y>'] = cmp.mapping.confirm({ select = true }),
         ['<C-Space>'] = cmp.mapping.complete(),
     }),
+    --[[ formatting = {
+        format = require("nvim-highlight-colors").format
+    } ]]
 })

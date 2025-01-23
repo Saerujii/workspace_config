@@ -62,6 +62,7 @@ return require('packer').startup(function(use)
     use { "mbbill/undotree" }
 
     use { 'uga-rosa/ccc.nvim' }
+    use { "brenoprata10/nvim-highlight-colors" }
 
     use {
         "ThePrimeagen/refactoring.nvim",
