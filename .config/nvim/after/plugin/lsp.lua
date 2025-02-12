@@ -75,7 +75,7 @@ lspconfig.gopls.setup {}
 configs.blade = {
     default_config = {
         -- Path to the executable: laravel-dev-generators
-        cmd = { "~/.local/share/nvim/mason/bin/laravel-dev-tools", "lsp" },
+        cmd = { "laravel-dev-tools", "lsp" },
         filetypes = { 'blade' },
         root_dir = function(fname)
             return lspconfig.util.find_git_ancestor(fname)
@@ -88,6 +88,19 @@ configs.blade = {
     -- Capabilities is specific to my setup.
     capabilities = capabilities
 } ]]
+
+lspconfig.html.setup {
+    capabilities = capabilities,
+    filetypes = { "html", "blade", },
+    init_options = {
+        configurationSection = { "html", "css", "javascript" },
+        embeddedLanguages = {
+            css = true,
+            javascript = true,
+        },
+        provideFormatter = true,
+    }
+}
 
 lspconfig.emmet_language_server.setup({
     filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "php", "blade", "templ" },

@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
 
     use "EmranMR/tree-sitter-blade"
 
+    use "haringsrob/laravel-dev-tools"
+
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
