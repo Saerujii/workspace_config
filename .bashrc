@@ -1,6 +1,6 @@
 alias vim="nvim"
 # alias mavenrun="echo && echo ------------------------------------ && mvn package | rg 'time|ERROR' && echo ------------------------------------ && java -cp target/php-to-java-1.0-SNAPSHOT.jar com.phpToJava.Main && echo"
-alias mavenrun="echo && echo ------------------------------------ && java -cp "$(mvn dependency:build-classpath -q -DincludeScope=runtime -Dmdep.outputFile=/dev/stdout)":target/php-to-java-1.0-SNAPSHOT.jar com.phpToJava.Main && echo"
+alias mavenrun="echo && echo ------------------------------------ && java -cp $(mvn dependency:build-classpath -q -DincludeScope=runtime -Dmdep.outputFile=/dev/stdout):target/php-to-java-1.0-SNAPSHOT.jar com.phpToJava.Main && echo"
 alias mavenrunfull="mvn package && java -cp target/php-to-java-1.0-SNAPSHOT.jar com.phpToJava.Main"
 alias maventest="\$HOME/bashscripts/maventest.sh"
 alias catalina=$CATALINA_HOME"/bin/catalina.sh"

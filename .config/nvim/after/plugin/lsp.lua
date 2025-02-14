@@ -89,7 +89,7 @@ configs.blade = {
     capabilities = capabilities
 } ]]
 
-lspconfig.html.setup {
+--[[ lspconfig.html.setup {
     capabilities = capabilities,
     filetypes = { "html", "blade", },
     init_options = {
@@ -100,7 +100,7 @@ lspconfig.html.setup {
         },
         provideFormatter = true,
     }
-}
+} ]]
 
 lspconfig.emmet_language_server.setup({
     filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "pug", "typescriptreact", "php", "blade", "templ" },
