@@ -72,7 +72,7 @@ lspconfig.cssls.setup {
 
 lspconfig.gopls.setup {}
 
-configs.blade = {
+--[[ configs.blade = {
     default_config = {
         -- Path to the executable: laravel-dev-generators
         cmd = { "laravel-dev-tools", "lsp" },
@@ -82,7 +82,7 @@ configs.blade = {
         end,
         settings = {},
     },
-}
+} ]]
 
 --[[ lspconfig.blade.setup {
     -- Capabilities is specific to my setup.
